@@ -1,0 +1,36 @@
+.ui-content{
+    margin: 20px 0;
+    &__item, &__header {
+        display: flex;
+    }
+    &__section {
+        border: 1px solid #afafaf;
+        margin: -1px -1px 0 0;
+        padding: 10px;
+        text-align: center;
+        .section-name {
+            display: none;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .ui-content{
+        margin: 10px 0;
+        &__item {
+            display: block;
+            margin: 10px 0;
+            border: 1px solid #afafaf;
+        }
+        &__header {
+            display: none;
+        }
+        &__section {
+            border: none;
+            margin: 0;
+            text-align: start;
+            .section-name {
+                display: block;
+            }
+        }
+    }    
+}

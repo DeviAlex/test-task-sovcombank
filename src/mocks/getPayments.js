@@ -1,4 +1,4 @@
-export default (params) => {
+export default (timeout = 1500) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve({
@@ -47,6 +47,6 @@ export default (params) => {
           },
         ],
       });
-    }, 1500);
+    }, timeout);
   });
 };
